@@ -1,0 +1,140 @@
+<!DOCTYPE html> <!--define el tipo de documento -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8"><!--admite casi todos los caracteresy simbolos del mundo -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user- scalable=no">
+	<meta content="Miriam Mendieta Racedo" name="author">
+	<meta content="DANA && AWEN, tienda online - joyería de plata 925: es una marca joven y cercana.... Descubre nuestros anillos, pendientes, pulseras, collares y nuestra sección especial de joyas personalizadas en plata 925." name="description">
+	<link rel="stylesheet" href="estils.css"> <!--nos dirige a un archivo Css externo.-->
+<!-- elementos no visibles-->
+	<title>DANA & AWEN | Joyeria online: plata 925</title> <!--define el título que se muestra en la pestaña del navegador.-->
+</head>
+	<body>
+		<!-- CABECERA -->
+		<header>
+			<a href="index.html">
+			<img  class="logo" src="imgs/logo-remove.png" alt="logo de DANA & AWEN">
+			</a>
+			<h1> DANA & AWEN</h1>
+			<h3>Deja que el mundo vea la joya que hay en ti...</h3> 
+		</header>
+		
+			<nav class="menu"> <!-- barra de navegación -->
+				<ul>
+					<li class="menu__li"><a href="#">Anillos
+						<ul>
+							<li class="menu__li__plus"><a href="pag2.html">Conoce la talla de tu anillo</a></li>
+						</ul></a></li>
+					<li class="menu__li"><a href="#">Pendientes</a></li><!--enlace vacio, aun no esta disponible -->
+					<li class="menu__li"><a href="#">Pulseras</a></li>
+					<li class="menu__li"><a href="#">Conjuntos</a></li>
+					<li class="menu__li"><a href="#">Piedras</a></li>
+					<li class="menu__li"><a href="#">Para Ellos</a></li>
+					<li class="menu__li"><a href="#">Ideas Regalos
+						<ul>
+							<li class="menu__li__plus"><a href="#">Pack de Joyas</a></li>
+							<li class="menu__li__plus"><a href="#">Joyas Personalizadas</a></li>
+							<li class="menu__li__plus"><a href="#">Eventos</a></li>
+							<li class="menu__li__plus"><a href="#">Tarjeta Regalo</a></li>
+							<li class="menu__li__plus"><a href="#">Presupuesto</a></li>
+						</ul></a></li>
+					<li class="menu__li"><a href="pag1.html">Contacto</a></li>
+				</ul>
+			</nav><!--se ha anidado lista -->
+	
+		<aside id="lateral"> <!-- panel lateral -->
+			<a href="#">
+				<img  class="aside__img" src="imgs/logox100.png." alt="icono DANA & AWEN">
+				<p>Sobre Nosotr@s</p>
+			</a>
+				<hr><br/><!--linea horizontal y salto de linea -->
+			<a href="#">
+				<img  class="aside__img" src="imgs/usuario.png" alt="icono usuario">
+				<p>Mi cuenta</p>
+			</a>
+			<a href="#">
+				<img  class="aside__img" src="imgs/carrito-de-compras.png" alt="icono carrito">
+				<p>Mi carrito</p>
+			</a>
+			<a href="#">
+				<img  class="aside__img" src="imgs/favoritos.png" alt="icono articulos favoritos">
+				<p>Artículos favoritos</p>
+			</a>
+		</aside>
+		
+			<!-- Información Principal -->
+			
+  				<div class="contacto">
+   					<h2>CONTACTO</h2>
+   					<h2>Atención al Cliente</h2>
+    				<p>Nos complace mejorar cada dia, tu opinión nos importa...
+    				<br/>
+    				<p>¿Tienes alguna duda?<br/> Nuestro equipo de atención al cliente te dará toda la ayuda que necesites.</p><br/>
+
+    				<p>HORARIO DE ATENCION</p>
+    				<p>De lunes a viernes de 9:30 a 17:00</p>
+    				<br/>
+    				<a href="#">
+						<img src="./imgs/iconos-social/correo.png" alt="correo">  atencionCliente@danajoyas.com
+      				</a><br>	
+    				<a href="#">
+        				<img src="./imgs/iconos-social/telf.png" alt="telefono">  961 355 287
+      				</a><br>
+    				<a href="#">
+        				<img src="./imgs/iconos-social/whatsap.png." alt="whatsap">  677 384 224
+      				</a><br>
+      			</div>
+
+  	       			<form><!--formulario -->
+     					<legend>FORMULARIO DE CONTACTO</legend>
+   						<label for="nombre">Nombre:</label><br/>
+   						<input type="text" id="nombre" name="nombre" placeholder="nombre completo" required><br/>
+  						<label for="email">Email:</label><br/>
+  						<input type="email" id="email" name="email" placeholder="Email" required><br/>
+  						<label for="asunto">Asunto:</label><br/>
+  						<select id="asunto" name="asunto" required>
+  							<option value="felicitacion">Felicitación</option>
+    						<option value="incidencia">Incidencia</option>
+    						<option value="sugerencia">Sugerencia</option>
+    						<option value="felicitacion">Felicitación</option>
+    						<option value="otros">Otros</option>
+  						</select><br>
+  						<label for="mensaje">Mensaje:</label><br/>
+  						<textarea id="mensaje" name="mensaje" placeholder="Escribe aquí..."></textarea><br/>
+  						<input type="submit" value="Enviar mensaje">  		
+  					</form>
+    			
+		<footer><!-- pie de página -->			
+			<h3>Enredad@s</h3>
+				<ul>
+					<li class="footer__li">
+      					<a href="#"> <!--enlace vacio, aun no esta disponible -->
+        					<img class="footer__li__img" src="./imgs/iconos-social/facebook.png" alt="Facebook">
+      					</a>
+    				</li>
+    				<li class="footer__li">
+      					<a href="#">
+        					<img class="footer__li__img" src="./imgs/iconos-social/instagram.png" alt="Instagram">
+      					</a>
+    				</li>
+    				<li class="footer__li">
+      					<a href="#">
+        					<img class="footer__li__img" src="./imgs/iconos-social/pinterest.png" alt="Pinterest">
+      					</a>
+    				</li>
+    				<li class="footer__li">
+      					<a href="#">
+        					<img  class="footer__li__img" src="./imgs/iconos-social/tiktok.png" alt="TikTok">
+      					</a>
+    				</li>
+    				<li class="footer__li">
+      					<a href="#">
+        					<img class="footer__li__img" src="./imgs/iconos-social/linkedin.png" alt="Linkedin">
+      					</a>
+    				</li>
+				</ul>
+			<p class="footer__p">©Copyright 2023, Todos los derechos reservados.<br/><a class="footer__a" href="https://es.linkedin.com/in/miriam-mendieta-racedo"><strong>MIRIAM MENDIETA RACEDO.-</strong></a><br/>IES Serra Perenxisa - 1DAM_S<br/>29/10/2023</p>
+		</footer>
+	</body>
+</html>
+ 

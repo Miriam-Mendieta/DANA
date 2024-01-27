@@ -1,0 +1,529 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}/* elimina todo el relleno y el margen de pagina la web*/
+
+a
+{
+	text-decoration: none;/*elimina el subrayado delos enlaces*/
+	color:black;
+	transition: all 0.3s;/* Aplica una transición suave a los enlaces cuando se pasa el cursor sobre ellos o se hace clic en ellos.*/
+}
+
+a:hover
+{
+	color: #ab507e;
+}/*cambia el color de los enlaces cunado pasa el cursor sobre los enlaces*/
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body
+{
+	font-family: Questrial, Arial, Helvetica, sans-serif;
+	font-size: 16px;/*tamaño de fuente*/
+	color:black;
+	margin:0;
+}
+/*----------------------------------------------------HEADER---------------------------------------------------*/
+
+header img 
+{
+	width: 75px;/*ancho del elemento*/
+	float: left;/* el elemento flota hacia izq o der*/
+}
+
+header
+{
+	width: 100%;
+	/*display:center;*/
+	background: #E5A4CB;
+	text-align: center;/*aliniación de texto*/
+	color: white;
+	font-style: oblique;/*estilo de la fuente*/
+	opacity: 0.8;/*controla la transpariencia del elemento*/
+	padding: 10px;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+}
+
+header h1
+{
+	font-size: 40px;
+	margin:0;
+	text-shadow: 3px 3px 5px #ccc;
+}
+
+.menu
+{
+	
+	position: absolute;
+	width: 100%;
+	display:flex;
+    align-items: center;
+  	justify-content: center;
+  	right: 0;
+  	padding: 10px;
+  	background: #ebd2beff;
+  	border: 1px solid #ccc;
+ }
+
+ul
+{
+	list-style: none;/*elimina los marcadores de lista*/
+	padding: 0;
+	margin: 0;
+	
+}
+
+.menu__li
+{
+	float:left;
+	padding: 0;
+	margin: 0;
+
+}
+
+.menu__li a
+{
+	display: inline-block;
+	padding:10px;
+    cursor: pointer;
+ }
+
+.menu__li ul
+{
+	display: none;
+	position: absolute;
+	/*padding-bottom: -30px;*/
+	
+}
+
+.menu__li__plus a 
+{
+  	display: block;
+   	background-color: #ffe8d4ff;
+   	font-size: 14px;
+  	width: auto;
+  	padding:10px;
+  	margin:0;
+  	
+}
+
+.menu__li_plus a:hover 
+{
+  	color: #7f055fff;
+
+}
+
+.menu > ul > li:hover >ul
+{
+	display: block;
+	z-index: 1;
+}
+
+/*-------------------------------------------------------ASIDE----------------------------------------------*/
+#lateral 
+{
+	float: right;
+  	/*width: 8%;*/
+  	margin-top: 65px;
+  	border: solid 3px gray;
+  	padding: 10px;
+  	border-radius: 20px;
+  	box-shadow: 5px 5px 10px #E5A4CB;
+  	position: sticky;
+  	top: 1px;
+  	text-align: center;
+   	font-size: 10px;
+   	right: 30px;
+   	background: white;
+   	z-index: 1;
+}
+
+aside a
+{
+	color: black;
+	margin-top: 30px;
+}
+
+aside p
+{
+	margin: 5px;
+}
+
+/*-----------------------------------------------------Maind--------------------------------------------------------*/
+main
+{
+	
+	margin-top: 70px;
+	/*padding-left: 0 20px;*/
+	box-sizing: border-box;
+	left: 10px;
+	margin-left: 30px;
+}
+
+.productos h2
+{
+	margin: 0;
+	font-size: 20px;
+	color: #ab507e;
+}
+
+#principal
+{
+	width: 80%;
+}
+
+#principal  article
+{
+	padding: 40px;
+	margin-bottom: 30px;
+	border: solid 1px gray;
+	box-shadow: 2px 2px 5px gray;/*agrega una sombra a un elemento con un desplazamiento*/
+	text-align: left;
+}
+
+.principal__article a, .principal__article p
+{
+	color:#ffe8d4ff;
+	font-weight: bold;
+}
+
+.principal__article a:hover
+{
+	color: #45062eff;
+	transition: all 0.3s;
+}
+
+.principal__productos__collares 
+{
+  	background-image: url(./imgs/productos/collares.png);
+  	background-size: cover;
+  	opacity: 0.8; /*da opacidad a la imagen*/
+  	
+}
+
+.principal__productos__anillos 
+{
+  	background-image: url(./imgs/productos/anillos.png);
+  	background-size: cover;
+  	opacity: 0.8;
+}
+
+.principal__productos__pendientes 
+{
+  	background-image: url(./imgs/productos/pendientes.png);
+  	background-size: cover;
+  	opacity: 0.8;
+}
+
+.principal__productos__pulseras 
+{
+  	background-image: url(./imgs/productos/pulseras.png);
+ 	background-size: cover;
+ 	opacity: 0.8;
+}
+
+
+.principal__productos__conjuntos 
+{
+  	background-image: url(./imgs/productos/conjunto.png);
+ 	background-size: cover;
+ 	opacity: 0.8; /*da opacidad a la imagen*/
+}
+
+.principal__productos__ellos 
+{
+  	background-image: url(./imgs/productos/ellos.png);
+ 	background-size: cover;/*escala el fondo de un elemento para que cubra todo
+ 	el elemento, sin distorsionar la imagen*/
+ 	opacity: 0.8;
+}
+.principal__productos__piedras
+{
+  	background-image: url(./imgs/productos/piedras.png);
+  	background-size: cover;
+  	opacity: 0.8;
+}
+
+.principal__productos__personalizados 
+{
+  	background-image: url(./imgs/productos/personalizadas.png);
+  	background-size: cover;
+  	opacity: 0.8;
+}
+
+.container h4 
+{
+  	width: 100%;
+  	text-align: center;
+  	font-size: 20px;
+}
+
+#container
+{
+	display:table;
+	width: 100%;
+}
+
+.col
+{
+	display: table-cell;/*alinea los elementos*/
+	
+}
+
+/*-------------------------------------------------footer-------------------------------------------------------------*/
+footer 
+{
+	position: relative;
+	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	text-align: center;/*centra los iconos de redes*/
+}
+
+footer h3 
+{
+	text-align: center;
+	font-size: 25px;
+	background: white;
+}
+
+
+.footer__li 
+{
+	display: inline-block;
+   	margin-top: 5px;
+   /*	padding-top: : 20px;*/
+   	margin-top: 0;
+}
+
+.footer__li__img 
+{
+  	display: inline-block;
+  	margin: 0 auto;
+  	padding: 10px;
+}
+
+.footer__p 
+{
+	background: #6e7b8c;
+	text-align: center;
+	font-size: 11px;
+	color: white;
+	padding:5px;
+}
+
+.footer__a
+{
+	font-size: 11px;
+	color: white;
+}
+
+
+/*----------------------------------------------ESTILOS pag1-------------------------------------------------------------*/
+
+.contacto 
+{
+  background-color: #ffffff;
+  width: 80%;
+  margin: 70px 50px 20px 10px;
+}
+
+.contacto h4 
+{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+ 
+}
+
+.contacto h2 
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.contacto a
+{
+  	text-decoration: none;
+}
+
+.contacto a img 
+{
+  	margin-right: 10px;
+}
+
+.contacto a:hover
+{
+	color: #ab507e;
+}
+
+
+/* Estilos formulario */
+
+form 
+{
+    width: 30%;
+  	margin: 0 auto;
+  	bottom: 10px;
+}
+
+form legend 
+{
+  	font-size: 20px;
+  	font-weight: bold;/*letra en negrita*/
+  	margin-bottom: 10px;
+}
+
+form label 
+{
+  	font-size: 16px;
+  	margin-bottom: 5px;
+}
+
+form input, form textarea ,select
+{
+	width: 100%;
+  	padding: 10px;
+  	border: 1px solid #ccc;
+  	border-radius: 5px;
+}
+
+form input[type="submit"] {
+  	background-color:#E5A4CB;
+  	color: #ffffff;
+  	font-size: 16px;
+  	padding: 10px;
+  	border: none;/*sin bordes*/
+	border-radius: 5px;/*redondea la esquina del elemento*/
+	margin-bottom: 50pX;
+}
+
+
+/*----------------------------------------ESTILOS pag2-------------------------------------------------------------*/
+
+
+.article__talla
+{
+	width: 75%;
+	padding: 0 5px;
+	margin-left: 0px;
+	text-align: justify;
+}
+
+/*primera letra del parrafo con otro tamaño y estilo*/
+.article__talla p:first-of-type::first-letter {
+ 	font-size: 3em;
+  	font-family: 'Courier New', monospace;
+  	font-style: italic;
+  	color: #ab507e;
+  	
+}
+ 
+.tabla__talla
+{
+	padding: 5px;
+	border-collapse: collapse;/*fusiona los bordes de la tabla*/
+	margin: 0 auto;
+  	width: 50%;
+  	margin-bottom: 20px;
+  	margin-top: 20px;
+}
+
+.tabla__talla th, td
+{
+	padding: 8px;
+  	text-align: left;
+  	border-bottom: 1px solid #ddd;
+}
+
+.tabla__talla tr:hover /*pseudo-selector que se usa para aplicar estilos a las filas de una tabla cuando el cursor se pasa sobre ellas*/
+{
+	background-color: #E5A4CB;/*cada vez que se pase por la fila cambiara de color*/
+}
+
+
+
+/*----------------------------------------RESPONSIVE-------------------------------------------------------------*/
+@media all and (max-width: 480px) {/*se aplica estilo a partir de 480px.*/
+
+header 
+{
+	width: 100%
+}
+
+.menu
+{
+	padding: 0;
+
+}
+
+nav .menu__li
+{
+     height: 20px;/*altura del elemento*/
+}
+
+.contacto
+{
+	padding: 0;
+	padding-top: 140px;
+	width: 70%;
+}
+.menu__li
+{
+    float: none;
+   	display: block;
+   	font-size: 12px;
+   	margin-bottom: 5px;
+}
+
+#principal
+{
+	width: 100%;
+	margin-left: 0;
+}
+.col 
+{
+    display: block;/*muestra los elementos en bloque uno debajo de otro*/
+    margin-block: 20px;/*crea espacio entre los bloques*/
+    margin-left: 10px;
+}
+
+#lateral 
+{
+	background: white;/*Establece el color de fondo del elemento en blanco.*/
+	width: 12%;
+	margin-top: unset;/*Elimina el margen superior del elemento.*/
+    position: sticky;/*se posiciona según la posición de desplazamiento del usuario, hasta que se pega.*/
+    z-index: 1;/*Coloca el elemento en primer plano de otros elementos en la página.*/
+    padding: 2vh;/*Agrega un relleno de 2vh (unidades de altura de la ventana gráfica) al elemento.*/
+    right: 11px
+}
+
+aside p {
+	font: 1em sans-serif;
+	margin-left: 0;
+
+}
+
+
+main 
+{
+	margin-top: 45%;
+
+}
+
+#talla
+{
+	width: 80%;
+	padding-top: 5px;
+	text-align: justify;/*texto justificado*/
+}
